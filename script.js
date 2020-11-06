@@ -150,7 +150,7 @@ function askQuestions() {
 
         //Score history
         function renderScore() {
-            // Show highscores
+            // Show leaderboard
             var displayedHighscore = document.createElement("p");
             displayedHighscore.textContent = nameSaved + " : " + scoreSaved + " points"
 

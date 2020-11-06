@@ -63,31 +63,31 @@
 #orderedList {
     font-size: 40px;
     padding: 10px;
-    text-align: center;
+    text-align: left;
 }
 
 #answer1 {
     margin: 20px;
-    background-color: blue;
-    color: white;
+    background-color: whitesmoke;
+    color: blue;
 }
 
 #answer2 {
     margin: 20px;
-    background-color: blue;
-    color: white;
+    background-color: whitesmoke;
+    color: blue;
 }
 
 #answer3 {
     margin: 20px;
-    background-color: blue;
-    color: white;
+    background-color: whitesmoke;
+    color: blue;
 }
 
 #answer4 {
     margin: 20px;
-    background-color: blue;
-    color: white;
+    background-color: whitesmoke;
+    color: blue;
 }
 
 #gameover {
