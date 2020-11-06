@@ -29,24 +29,24 @@ var isGameOver = false
 
 //Array of questions
 var questions = [{
-    theQuestion: "What year did Friends debut",
+    theQuestion: "What year did Friends debut?",
     options: ["1994", "1995", "1998", "1999"],
     answer: "0",
 }, {
-    theQuestion: "What selector is the # symbol used to specify?",
-    options: ["ID", "Class", "<P>", "<Div>"],
-    answer: "0",
+    theQuestion: "How many sister does Joey have?",
+    options: ["2", "5", "7", "10"],
+    answer: "2",
 }, {
-    theQuestion: "When linking your Javascript page, where do you place the link?",
-    options: ["Header", "End of Body", "Somewhere in the middle", "Doesn't Matter"],
+    theQuestion: "What nickname did Monica’s dad give her?",
+    options: ["Monique", "Little Harmonica", "Mo Mo", "Moniquita"],
     answer: "1",
 }, {
-    theQuestion: "Which of these symbols represents the 'or' function?",
-    options: ["&&", "===", "++", "||"],
+    theQuestion: "What’s Phoebe’s sister’s name?",
+    options: ["Ariel", "Blanca", "Sonia", "Ursula"],
     answer: "3",
 }, {
-    theQuestion: "Which of these is the outermost feature in the box model?",
-    options: ["Padding", "Margin", "Border", "Content"],
+    theQuestion: "What did Phoebe legally change her name to?",
+    options: ["Smelly Cat", "Princess Consuela Bannana Hammock", "Jasmine Chleopatra", "Sussan"],
     answer: "1",
 }];
 
