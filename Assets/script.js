@@ -12,7 +12,7 @@ var answer3 = document.querySelector("#answer3");
 var answer4 = document.querySelector("#answer4");
 var finalScore = document.querySelector("#final-score");
 var answers = document.querySelectorAll(".answerClass")
-var currentQuestion = document.querySelector("#theQuestion");
+var currentQuestion = document.querySelector("#thisQuestion");
 var gameover = document.querySelector("#gameover");
 var submitButton = document.querySelector("#submit-button");
 var initialsInput = document.querySelector("#initials");
@@ -29,23 +29,23 @@ var isGameOver = false
 
 //Array of questions
 var questions = [{
-    thequestion: "Which of these data types IS NOT supported by JavaScript",
-    options: ["Null", "Boolean", "Alert", "String"],
-    answer: "2",
+    theQuestion: "What year did Friends debut",
+    options: ["1994", "1995", "1998", "1999"],
+    answer: "0",
 }, {
-    thequestion: "What selector is the # symbol used to specify?",
+    theQuestion: "What selector is the # symbol used to specify?",
     options: ["ID", "Class", "<P>", "<Div>"],
     answer: "0",
 }, {
-    thequestion: "When linking your Javascript page, where do you place the link?",
+    theQuestion: "When linking your Javascript page, where do you place the link?",
     options: ["Header", "End of Body", "Somewhere in the middle", "Doesn't Matter"],
     answer: "1",
 }, {
-    thequestion: "Which of these symbols represents the 'or' function?",
+    theQuestion: "Which of these symbols represents the 'or' function?",
     options: ["&&", "===", "++", "||"],
     answer: "3",
 }, {
-    thequestion: "Which of these is the outermost feature in the box model?",
+    theQuestion: "Which of these is the outermost feature in the box model?",
     options: ["Padding", "Margin", "Border", "Content"],
     answer: "1",
 }];
@@ -54,7 +54,7 @@ var questions = [{
 function askQuestions() {
 
     //Show quiz
-    quiz.style.display = "fancy";
+    quiz.style.display = "block";
 
     startTimer();
     rerender();
@@ -122,7 +122,7 @@ function askQuestions() {
         currentScore.textContent = "Your Score: " + score;
 
         //Present questions
-        currentQuestion.textContent = questions[thisQuestion].thequestion;
+        currentQuestion.textContent = questions[thisQuestion].theQuestion;
 
         //Present 4 potential answers
         for (let index = 0; index < answers.length; index++) {
