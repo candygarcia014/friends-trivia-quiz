@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timed Friends Quiz</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <div id="main">
+        <!--Highscore and Timer row-->
+
+        <!--Showcase-->
+        <div id="bg-img"></div>
+
+        <!--Welcome Message-->
+        <section class="row" id="welcome">
+            <div class="col-lg-12 col-lg-12">
+                <h1>Welcome to the "Friends" trivia game</h1>
+
+                <!--Start Button-->
+                <button id="startButton" class=>Start</button>
+            </div>
+
+        </section>
+        <!--Timer -->
+        <div class="row">
+            <div class="col-md-12 col-sm-12">
+            </div>
+            <div class="col-md-12 col-sm-12">
+                <div id="timer">Timer</div>
+            </div>
+        </div>
+
+        <!--The Actual Quiz-->
+        <section id="quiz" class="hide row">
+            <!--The question-->
+            <div class="col-md-12 col-sm-12">
+                <h2 id="theQuestion"></h2>
+            </div>
+            <!--The answers-->
+            <div class="col-md-12 col-sm-12">
+                <ol id="orderedList">
+                    <li id="answer1" class="answerClass" data-index=0></li>
+                    <li id="answer2" class="answerClass" data-index=1></li>
+                    <li id="answer3" class="answerClass" data-index=2></li>
+                    <li id="answer4" class="answerClass" data-index=3></li>
+                </ol>
+            </div>
+            <!--Grade-->
+            <div class="col-md-12 col-sm-12">
+                <div id="grade"></div>
+            </div>
+        </section>
+
+        <!--Game Over-->
+        <section class="row">
+            <div id="gameover">
+                <div class="col-md-12 col-sm-12">
+                    <h2>Game Over</h2>
+                    <h3>Your score is <span id="final-score">0</span></h3>
+                    <label for="initials-area">Enter initials:</label>
+                    <input type="text" name="initials-area" maxlength="4" id="initials">
+                    <button id="submit-button" type="submit">Submit</button>
+                </div>
+            </div>
+        </section>
+
+        <!--Leaderboard-->
+        <section id="theleaderboard">
+            <div class="row">
+                <div class="col-md-12 col-sm-12" id="scores">
+                    <div id="currentScore">Your Current Score</div>
+                    <h4>Highscore</h4>
+                    <div id="highscores"></div>
+                </div>
+            </div>
+        </section>
+
+        <script src="./script.js"></script>
+</body>
+
+</html>

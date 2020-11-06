@@ -1,0 +1,108 @@
+#welcome {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 50px;
+    width: 100%;
+    margin: auto;
+    padding: 50px;
+    text-align: center;
+}
+
+#bg-img {
+    background: url('../Assets/08friends.jpg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    min-height: 400px;
+}
+
+#welcome h1 {
+    margin-bottom: 5px;
+}
+
+#welcome h2 {
+    font-size: 40px;
+    margin-bottom: 5px;
+}
+
+#startButton {
+    font-size: 35px;
+    color: white;
+    background-color: red;
+    padding: 10px;
+    text-align: center;
+}
+
+#timer {
+    font-size: 40px;
+    padding: 50px;
+    padding-bottom: 0px;
+    text-align: center;
+}
+
+#quiz {
+    display: none;
+    font-size: 40px;
+    padding: 10px;
+    text-align: center;
+    margin: auto;
+    width: 50%;
+}
+
+#currentScore {
+    font-size: 40px;
+    padding: 50px;
+    padding-bottom: 0px;
+    text-align: center;
+}
+
+#theQuestion {
+    margin: 50px;
+    margin-bottom: 10px;
+}
+
+#orderedList {
+    font-size: 40px;
+    padding: 10px;
+    text-align: center;
+}
+
+#gameover {
+    display: none;
+    font-size: 40px;
+    padding: 10px;
+    text-align: center;
+    margin: auto;
+    width: 50%;
+}
+
+#theleaderboard {
+    display: none;
+    font-size: 40px;
+    padding: 10px;
+    text-align: center;
+    margin: auto;
+    width: 50%;
+}
+
+#answer1 {
+    margin: 20px;
+    background-color: purple;
+    color: white;
+}
+
+#answer2 {
+    margin: 20px;
+    background-color: purple;
+    color: white;
+}
+
+#answer3 {
+    margin: 20px;
+    background-color: purple;
+    color: white;
+}
+
+#answer4 {
+    margin: 20px;
+    background-color: purple;
+    color: white;
+}
