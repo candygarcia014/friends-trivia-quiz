@@ -1,4 +1,4 @@
-// DOM element variables
+//Variables
 var quiz = document.querySelector("#quiz");
 var orderedList = document.querySelector("#orderedList");
 var welcome = document.querySelector("#welcome");
@@ -148,9 +148,9 @@ function askQuestions() {
 
         saveScore();
 
-        //Render score history
+        //Score history
         function renderScore() {
-            // Show leaderboard
+            // Show highscores
             var displayedHighscore = document.createElement("p");
             displayedHighscore.textContent = nameSaved + " : " + scoreSaved + " points"
 

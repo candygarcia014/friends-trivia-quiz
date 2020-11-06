@@ -1,5 +1,5 @@
 #welcome {
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 50px;
     width: 100%;
     margin: auto;
@@ -8,7 +8,7 @@
 }
 
 #bg-img {
-    background: url('../Assets/08friends.jpg');
+    background: url('friendsgame.jpg');
     background-size: 100%;
     background-repeat: no-repeat;
     min-height: 400px;
@@ -32,8 +32,9 @@
 }
 
 #timer {
+    color: orange;
     font-size: 40px;
-    padding: 50px;
+    padding: 40px;
     padding-bottom: 0px;
     text-align: center;
 }
@@ -41,7 +42,7 @@
 #quiz {
     display: none;
     font-size: 40px;
-    padding: 10px;
+    padding: 5px;
     text-align: center;
     margin: auto;
     width: 60%;
@@ -55,7 +56,7 @@
 }
 
 #theQuestion {
-    margin: 50px;
+    margin: 40px;
     margin-bottom: 10px;
 }
 
@@ -65,7 +66,32 @@
     text-align: center;
 }
 
+#answer1 {
+    margin: 20px;
+    background-color: blue;
+    color: white;
+}
+
+#answer2 {
+    margin: 20px;
+    background-color: blue;
+    color: white;
+}
+
+#answer3 {
+    margin: 20px;
+    background-color: blue;
+    color: white;
+}
+
+#answer4 {
+    margin: 20px;
+    background-color: blue;
+    color: white;
+}
+
 #gameover {
+    color: rebeccapurple;
     display: none;
     font-size: 40px;
     padding: 10px;
@@ -75,34 +101,11 @@
 }
 
 #theleaderboard {
+    color: purple;
     display: none;
     font-size: 40px;
     padding: 10px;
     text-align: center;
     margin: auto;
     width: 50%;
-}
-
-#answer1 {
-    margin: 20px;
-    background-color: purple;
-    color: white;
-}
-
-#answer2 {
-    margin: 20px;
-    background-color: purple;
-    color: white;
-}
-
-#answer3 {
-    margin: 20px;
-    background-color: purple;
-    color: white;
-}
-
-#answer4 {
-    margin: 20px;
-    background-color: purple;
-    color: white;
 }
