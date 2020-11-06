@@ -91,12 +91,13 @@ function askQuestions() {
         var answerIndex = this.dataset.index;
         //Declare right or wrong by comparing answer in question object to clicked choice
         if (answerIndex === questions[thisQuestion].answer) {
-            grade.textContent = "Zip Zap Correct Is That"
+            grade.textContent = "Correct!"
             score += 10;
             timer += 5;
         } else {
-            grade.textContent = "Boom Bammed Shoulda Crammed"
+            grade.textContent = "Nope!"
             timer -= 10;
+            //how do I set the floor to 0. 
         }
 
         //Clear old question 

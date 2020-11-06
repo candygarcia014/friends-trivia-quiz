@@ -15,11 +15,11 @@
 }
 
 #welcome h1 {
-    margin-bottom: 5px;
+    margin-bottom: 10px;
 }
 
 #welcome h2 {
-    font-size: 40px;
+    font-size: 50px;
     margin-bottom: 5px;
 }
 
@@ -44,7 +44,7 @@
     padding: 10px;
     text-align: center;
     margin: auto;
-    width: 50%;
+    width: 60%;
 }
 
 #currentScore {
