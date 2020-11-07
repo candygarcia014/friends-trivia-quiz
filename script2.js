@@ -18,16 +18,12 @@ var submitButton = document.querySelector("#submit-button");
 var initialsInput = document.querySelector("#initials");
 var theLeaderboard = document.querySelector("#theleaderboard");
 var scores = document.querySelector("#highscores");
-
-
-
-//Gamestate variables
 var thisQuestion = 0;
 var timer = 20;
 var score = 0;
 var isGameOver = false
 
-//Array of questions
+//Array of trivia questions
 var questions = [{
     theQuestion: "What year did Friends debut?",
     options: ["1994", "1995", "1998", "1999"],
@@ -50,24 +46,24 @@ var questions = [{
     answer: "1",
 }];
 
-//For loop cycling through each question.
+//For looping through each question.
 function askQuestions() {
 
-    //Show quiz
     quiz.style.display = "block";
 
     startTimer();
     rerender();
 
-    //Start timer
+    //Timer
     function startTimer() {
         var timerInterval = setInterval(function() {
             timer--;
             timerSent.textContent = timer + " seconds left";
+
             if (timer <= 0 || gameover.style.display === "block") {
                 clearInterval(timerInterval);
                 timerSent.textContent = "No time left";
-                //End Game (state Game Over, go to results page), but if gameover has already  happened, don't do it
+
                 if (quiz.style.display === "none" || gameover.style.display === "none") {
                     return;
                 } else {
@@ -84,12 +80,12 @@ function askQuestions() {
         finalScore.textContent = score;
     }
 
-    //Makes questions clickable
+    //On click events for selecting answers
     function click(event) {
         event.preventDefault();
         event.stopPropagation();
         var answerIndex = this.dataset.index;
-        //Declare right or wrong by comparing answer in question object to clicked choice
+        //Declare right or wrong 
         if (answerIndex === questions[thisQuestion].answer) {
             grade.textContent = "Correct!"
             score += 10;
@@ -97,10 +93,10 @@ function askQuestions() {
         } else {
             grade.textContent = "Nope!"
             timer -= 10;
-            //how do I set the floor to 0. 
+
         }
 
-        //Clear old question 
+        //Clear previous question 
         answers.forEach(function(answer) {
             answer.textContent = "";
         })
@@ -118,9 +114,6 @@ function askQuestions() {
 
     // Ask questions
     function rerender() {
-
-        //Present Score
-        currentScore.textContent = "Your Score: " + score;
 
         //Present questions
         currentQuestion.textContent = questions[thisQuestion].theQuestion;
@@ -141,11 +134,6 @@ function askQuestions() {
         var initials = initialsInput.value.trim();
         var scoreSaved = JSON.parse(window.localStorage.getItem("scoreSaved"));
         var nameSaved = JSON.parse(window.localStorage.getItem("nameSaved"));
-        var scores = JSON.parse(window.localStorage.getItem("scores")) || [];
-        for (let index = 0; index < scores.length; index++) {
-            const element = scores[index];
-
-        }
         if (scoreSaved === null || score > scoreSaved) {
             scoreSaved = score;
             nameSaved = initials;
@@ -155,7 +143,7 @@ function askQuestions() {
 
         //Score history
         function renderScore() {
-            // Show leaderboard
+            //Display high score 
             var displayedHighscore = document.createElement("p");
             displayedHighscore.textContent = nameSaved + " : " + scoreSaved + " points"
 
@@ -164,18 +152,10 @@ function askQuestions() {
             theLeaderboard.style.display = "block";
         }
 
-        //Save score
-
-
+        //Save score in local storage 
         function saveScore() {
-            var scores = JSON.parse(window.localStorage.getItem("scores")) || [];
-            console.log(scores)
-            var newscores = scores.push({ name: nameSaved, score: scoreSaved });
-            console.log(newscores)
             window.localStorage.setItem("scoreSaved", JSON.stringify(scoreSaved));
             window.localStorage.setItem("nameSaved", JSON.stringify(nameSaved));
-            window.localStorage.setItem("scores", JSON.stringify(newscores))
-
         };
 
         renderScore();
