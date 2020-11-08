@@ -5,11 +5,12 @@ Homework #4-
 
 * I made my site to be responsive to any user that is using it on any screen size from small to large. 
 
-*
+* I decided to make a timed trivia game with 5 questions and 20 seconds to start 
+
 
 * The second phase was to write the JS file. I kept missing variables and worked on getting them to propperly allign with the rest of the code so that the functions would work properly.
 
-*
+* The timer was hard to figure out. It kept going into negative time. My tutor helepd me replace the negative time with "No time left"
 
 
 
@@ -20,7 +21,3 @@ Link to the Github Repo: https://github.com/candygarcia014/friends-trivia-quiz
 * screenshot of my deployed application: 
 ![screenshot](snapshot.PNG)
 
-Questions for John: 
-1. how do I get the timer to stay positve oabove 0 
-2. How do I center or shrink the initials box at the end of game?
-3. How do I get the log of the winners/high scores? 
